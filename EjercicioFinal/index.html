@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio Final – Guía 3</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicio Final – Guía 3</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Estructura base pedida en la guía -->
-    <div class="contenedor">
-        <img src="https://img.freepik.com/psd-gratis/ilustracion-dinero-aislada_23-2151568514.jpg?semt=ais_hybrid&w=80&q=80" alt="Dinero">
-        <h2>Pago de colegiatura</h2>
-        <a href="https://uca.edu.sv/" target="_blank" class="btn">Pagar</a>
-    </div>
+    
+  <div class="shopping-cart">
+    <h2>Carrito de compras</h2>
+
+    <ul>
+      <li>
+        <a class="link" href="https://uca.edu.sv/" target="_blank" rel="noopener noreferrer">
+          Pago de colegiatura
+        </a>
+        : <span class="price">$99.95</span>
+      </li>
+    
+      <img
+        class="money-img"
+        src="https://img.freepik.com/psd-gratis/ilustracion-dinero-aislada_23-2151568514.jpg?semt=ais_hybrid&w=80&q=80"
+        alt="Ilustración de dinero"
+        width="80" height="80"
+      />
+      <li>...</li>
+    </ul>
+
+    <p class="total"><strong>Importe total:</strong> $99.95</p>
+
+    <button class="btn-pagar" type="button" onclick="window.open('https://uca.edu.sv/','_blank')">
+      Pagar
+    </button>
+  </div>
 </body>
 </html>
